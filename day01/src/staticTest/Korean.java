@@ -7,9 +7,10 @@ public class Korean {
 
 	// 초기화 생성자 단축키 : Alt + shift + s > o > enter
 
-	public Korean(String name, int age) { // Korean 메소드(String name, int age)를 
+	public Korean(String name, int age/*, String country*/) { // Korean 메소드(String name, int age)를 
 		this.name = name;	// this로 사용자가 부르고자 하는 값의 위치를 찾아.name값을 Korean의 입력한 name값에 넣어줌
 		this.age = age;		// this로 사용자가 부르고자 하는 값의 위치를 찾아.age값을 Korean의 입력한 age값에 넣어줌
+//		this.country;	// static으로 정의된 타입은 지역변수 처럼 다른 메소드에서 사용하거나 부를 수 없다
 	}
 
 	

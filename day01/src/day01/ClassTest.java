@@ -9,7 +9,7 @@ public class ClassTest {
 	public static void main(String[] args) {
 		Student kim = new Student("김철수", 90, 70);	// 객체 생성
 		Student park = new Student("박영희", 100, 80);	// 객체 생성
-		// 새로운 학생이 옴
+		// 새로운 학생이 옴(전학생)
 		Student s = new Student();	// Student타입의 s객체 = 연산자 new Student()로 매모리 위치를 알려줌
 		
 		int[] ar = {10, 20, 30};	// 아래 코드 이해시키기 용도
@@ -35,25 +35,29 @@ public class ClassTest {
 			System.out.println("해당 학생은 찾을 수 없습니다.");	// "해당 학생은 찾을 수 없습니다." 출력
 		}
 		
-//		students[0].show(); // kim.show();
-//		students[1].show(); // park.show();
-//		students[2].show();	// s.show();
-		
 		// 빠른 for문으로 출력
 		for(Student st : students) {	// Student타입으로 st를 students데이터 길이동안
 			st.show();	// Student타입 내부에 show메소드가 있기 때문에, st.show();를 통해 배열의 값마다 show메소드를 사용
 		}
 		
 		
-//		kim.name = "김철수";	// Student타입 kim의 name에 "김철수" 저장
-//		kim.kor = 90;		// Student타입 kim의 kor에 90 저장
-//		kim.eng = 70;		// Student타입 kim의 eng에 70 저장
+//		Student kim = new Student();	// 객체 생성
+//		Student park = new Student();	// 객체 생성
+		
+//		kim.name = "김철수";	// Student타입 kim객체의 name에 "김철수" 저장
+//		kim.kor = 90;		// Student타입 kim객체의 kor에 90 저장
+//		kim.eng = 70;		// Student타입 kim객체의 eng에 70 저장
 //		
-//		park.name = "박영희";	// Student타입 park의 name에 "박영희" 저장
-//		park.kor = 100;		// Student타입 park의 kor에 100 저장
-//		park.eng = 80;		// Student타입 park의 eng에 80 저장
+//		park.name = "박영희";	// Student타입 park객체의 name에 "박영희" 저장
+//		park.kor = 100;		// Student타입 park객체의 kor에 100 저장
+//		park.eng = 80;		// Student타입 park객체의 eng에 80 저장
 //		
-//		kim.show();		// kim내부에 show메소드 사용
-//		park.show();	// park내부에 show메소드 사용
+//		kim.show();		// Student 클래스 내의 kim내부에 show메소드 사용
+//		park.show();	// Student 클래스 내의 park내부에 show메소드 사용
+		
+		// 클래스 타입이 요소로 들어있는 배열
+//		students[0].show(); // kim.show();
+//		students[1].show(); // park.show();
+//		students[2].show();	// s.show();
 	}
 }
