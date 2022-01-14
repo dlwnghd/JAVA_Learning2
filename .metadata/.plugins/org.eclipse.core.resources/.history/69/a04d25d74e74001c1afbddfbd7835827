@@ -1,0 +1,11 @@
+package staticTest;
+
+public class Main {
+	public static void main(String[] args) {
+		Korean kim = new Korean("±èÃ¶¼ö", 10);
+		Korean park = new Korean("¹Ú¿µÈñ", 20);
+		
+		System.out.println(kim.name);
+		System.out.println(park.name);
+	}
+}
