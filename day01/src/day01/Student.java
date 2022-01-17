@@ -1,33 +1,33 @@
 package day01;
 
 public class Student {
-	String name;	// String Å¸ÀÔÀÇ name(ÀÎ½ºÅÏ½º(°´Ã¼) º¯¼ö)
-	int kor;		// intÅ¸ÀÔÀÇ kor(ÀÎ½ºÅÏ½º(°´Ã¼) º¯¼ö)
-	int eng;		// intÅ¸ÀÔÀÇ eng(ÀÎ½ºÅÏ½º(°´Ã¼) º¯¼ö)
+	String name;	// String íƒ€ìž…ì˜ name(ì¸ìŠ¤í„´ìŠ¤(ê°ì²´) ë³€ìˆ˜)
+	int kor;		// intíƒ€ìž…ì˜ kor(ì¸ìŠ¤í„´ìŠ¤(ê°ì²´) ë³€ìˆ˜)
+	int eng;		// intíƒ€ìž…ì˜ eng(ì¸ìŠ¤í„´ìŠ¤(ê°ì²´) ë³€ìˆ˜)
 	
 	
-	// ¸¸¾à Á¤ÀÇµÈ »ý¼ºÀÚ(¿©±â¼± Student())°¡ ¾ø´Ù¸é ÄÄÇ»ÅÍ(ÄÄÆÄÀÏ·¯)°¡ ¾Ë¾Æ¼­ »ý¼ºÀÚ¸¦ Ãß°¡ÇØÁØ´Ù --> ±âº»»ý¼ºÀÚ
-	// Á¤ÀÇµÈ »ý¼ºÀÚ°¡ ÀÖ´Ù¸é ±âº»»ý¼ºÀÚ¸¦ Ãß°¡ÇØÁÖÁö ¾Ê´Â´Ù
-	// ±âº» »ý¼ºÀÚ¸¦ ¸í½ÃÀûÀ¸·Î Á¤ÀÇÇÔÀ¸·Î½á ¸Þ¼Òµå ¿À¹ö·ÎµùÃ³·³ ¿©·¯ ¹æ½ÄÀ¸·Î »ý¼ºÀÚ¸¦ È°¿ëÇÒ ¼ö ÀÖ´Ù.
-	public Student() {;}	// ±âº» »ý¼ºÀÚ(±âº»ÀûÀ¸·Î »ý¼ºµÇ´Â »ý¼ºÀÚ), ;Àº ÀÇµµÀûÀ¸·Î ºñ¿î °ÍÀ» ´Ù¸¥ °³¹ßÀÚ¿¡°Ô ¾Ë·ÁÁÖ±â À§ÇØ ¾²±âµµ ÇÔ
+	// ë§Œì•½ ì •ì˜ëœ ìƒì„±ìž(ì—¬ê¸°ì„  Student())ê°€ ì—†ë‹¤ë©´ ì»´í“¨í„°(ì»´íŒŒì¼ëŸ¬)ê°€ ì•Œì•„ì„œ ìƒì„±ìžë¥¼ ì¶”ê°€í•´ì¤€ë‹¤ --> ê¸°ë³¸ìƒì„±ìž
+	// ì •ì˜ëœ ìƒì„±ìžê°€ ìžˆë‹¤ë©´ ê¸°ë³¸ìƒì„±ìžë¥¼ ì¶”ê°€í•´ì£¼ì§€ ì•ŠëŠ”ë‹¤
+	// ê¸°ë³¸ ìƒì„±ìžë¥¼ ëª…ì‹œì ìœ¼ë¡œ ì •ì˜í•¨ìœ¼ë¡œì¨ ë©”ì†Œë“œ ì˜¤ë²„ë¡œë”©ì²˜ëŸ¼ ì—¬ëŸ¬ ë°©ì‹ìœ¼ë¡œ ìƒì„±ìžë¥¼ í™œìš©í•  ìˆ˜ ìžˆë‹¤.
+	public Student() {;}	// ê¸°ë³¸ ìƒì„±ìž(ê¸°ë³¸ì ìœ¼ë¡œ ìƒì„±ë˜ëŠ” ìƒì„±ìž), ;ì€ ì˜ë„ì ìœ¼ë¡œ ë¹„ìš´ ê²ƒì„ ë‹¤ë¥¸ ê°œë°œìžì—ê²Œ ì•Œë ¤ì£¼ê¸° ìœ„í•´ ì“°ê¸°ë„ í•¨
 	
-	// ÃÊ±âÈ­ »ý¼ºÀÚ, »ý¼ºÀÚ Á¤ÀÇ ±¸°£, »ý¼ºÀÚ´Â ¸Þ¼Òµå¿Í ´Þ¸® ±â´ÉÀÌ Á¤ÇØÁ® ÀÖ±â ¶§¹®¿¡ returnÅ¸ÀÔÀÌ ¾ø´Ù
-	public Student(String name, int kor, int eng) {	// ¸Å°³ º¯¼ö(Áö¿ª º¯¼ö)
-		// »ý¼ºÀÚÀÇ ±â´ÉÀÎ ¸Þ¸ð¸®ÀÇ µî·Ï½ÃÅ°´Â ¿ªÇÒÀÌ »ç¶óÁöÁö´Â ¾ÊÀ½
-		// ¾Æ·¡´Â Ãß°¡ÀûÀ¸·Î µ¿ÀÛÇÒ ±â´ÉÀ» ³ÖÀ» ¼ö ÀÖÀ½
-		// ¡é°´Ã¼ ¾È¿¡ÀÖ´Â. ÀÎ½ºÅÏ½º º¯¼ö = ¸Å°³º¯¼ö;
-		this.name = name;	// this »ý·« ºÒ°¡´É, »ý·« ½Ã À§¿¡¼­ Á¤ÀÇÇÑ name == null °ªÀÌ ¿È, Áï [¸Å°³ º¯¼ö = ¸Å°³ º¯¼ö]°¡ µÇ¹ö¸²
-		this.kor = kor;		// this·Î »ç¿ëÀÚ°¡ ºÎ¸£°íÀÚ ÇÏ´Â °ªÀÇ À§Ä¡¸¦ Ã£¾Æ.kor°ªÀ» Student Å¬·¡½ºÀÇ ÀÔ·ÂÇÑ kor°ª¿¡ ³Ö¾îÁÜ
-		this.eng = eng;		// this·Î »ç¿ëÀÚ°¡ ºÎ¸£°íÀÚ ÇÏ´Â °ªÀÇ À§Ä¡¸¦ Ã£¾Æ.eng°ªÀ» Student Å¬·¡½ºÀÇ ÀÔ·ÂÇÑ eng°ª¿¡ ³Ö¾îÁÜ
-//		System.out.println("»ý¼ºÀÚ ¾È¿¡ ÀûÀº ¹®Àå");
+	// ì´ˆê¸°í™” ìƒì„±ìž, ìƒì„±ìž ì •ì˜ êµ¬ê°„, ìƒì„±ìžëŠ” ë©”ì†Œë“œì™€ ë‹¬ë¦¬ ê¸°ëŠ¥ì´ ì •í•´ì ¸ ìžˆê¸° ë•Œë¬¸ì— returníƒ€ìž…ì´ ì—†ë‹¤
+	public Student(String name, int kor, int eng) {	// ë§¤ê°œ ë³€ìˆ˜(ì§€ì—­ ë³€ìˆ˜)
+		// ìƒì„±ìžì˜ ê¸°ëŠ¥ì¸ ë©”ëª¨ë¦¬ì˜ ë“±ë¡ì‹œí‚¤ëŠ” ì—­í• ì´ ì‚¬ë¼ì§€ì§€ëŠ” ì•ŠìŒ
+		// ì•„ëž˜ëŠ” ì¶”ê°€ì ìœ¼ë¡œ ë™ìž‘í•  ê¸°ëŠ¥ì„ ë„£ì„ ìˆ˜ ìžˆìŒ
+		// â†“ê°ì²´ ì•ˆì—ìžˆëŠ”. ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ = ë§¤ê°œë³€ìˆ˜;
+		this.name = name;	// this ìƒëžµ ë¶ˆê°€ëŠ¥, ìƒëžµ ì‹œ ìœ„ì—ì„œ ì •ì˜í•œ name == null ê°’ì´ ì˜´, ì¦‰ [ë§¤ê°œ ë³€ìˆ˜ = ë§¤ê°œ ë³€ìˆ˜]ê°€ ë˜ë²„ë¦¼
+		this.kor = kor;		// thisë¡œ ì‚¬ìš©ìžê°€ ë¶€ë¥´ê³ ìž í•˜ëŠ” ê°’ì˜ ìœ„ì¹˜ë¥¼ ì°¾ì•„.korê°’ì„ Student í´ëž˜ìŠ¤ì˜ ìž…ë ¥í•œ korê°’ì— ë„£ì–´ì¤Œ
+		this.eng = eng;		// thisë¡œ ì‚¬ìš©ìžê°€ ë¶€ë¥´ê³ ìž í•˜ëŠ” ê°’ì˜ ìœ„ì¹˜ë¥¼ ì°¾ì•„.engê°’ì„ Student í´ëž˜ìŠ¤ì˜ ìž…ë ¥í•œ engê°’ì— ë„£ì–´ì¤Œ
+//		System.out.println("ìƒì„±ìž ì•ˆì— ì ì€ ë¬¸ìž¥");
 	}
 	
-	public void show() {	// show ¸Þ¼Òµå
-		System.out.println("---ÇÐ»ýÁ¤º¸---");		// "---ÇÐ»ýÁ¤º¸---" Ãâ·Â
-//		this´Â kim, park µî »ç¿ëÀÚ°¡ ¾Õ¿¡¼­ StudentÅ¸ÀÔÀ¸·Î Á¤ÀÇ Çß´ø
-//		°´Ã¼ÀÇ ÀÌ¸§À» ¹Þ¾Æ ÁÖ¼Ò¸¦ ºÒ·¯¿À´Â ¿ªÇÒÀ» ÇÔ
-		System.out.println("ÀÌ¸§ : " + this.name);	// this »ý·« °¡´É
-		System.out.println("±¹¾î : " + this.kor);		// this »ý·« °¡´É
-		System.out.println("¿µ¾î : " + this.eng);		// this »ý·« °¡´É
+	public void show() {	// show ë©”ì†Œë“œ
+		System.out.println("---í•™ìƒì •ë³´---");		// "---í•™ìƒì •ë³´---" ì¶œë ¥
+//		thisëŠ” kim, park ë“± ì‚¬ìš©ìžê°€ ì•žì—ì„œ Studentíƒ€ìž…ìœ¼ë¡œ ì •ì˜ í–ˆë˜
+//		ê°ì²´ì˜ ì´ë¦„ì„ ë°›ì•„ ì£¼ì†Œë¥¼ ë¶ˆëŸ¬ì˜¤ëŠ” ì—­í• ì„ í•¨
+		System.out.println("ì´ë¦„ : " + this.name);	// this ìƒëžµ ê°€ëŠ¥
+		System.out.println("êµ­ì–´ : " + this.kor);		// this ìƒëžµ ê°€ëŠ¥
+		System.out.println("ì˜ì–´ : " + this.eng);		// this ìƒëžµ ê°€ëŠ¥
 	}
 }

@@ -1,27 +1,27 @@
 package inheritTest;
 
 public class Car {
-	String name;	// StringÅ¸ÀÔÀÇ name(°´Ã¼ º¯¼ö)
-	int price;		// intÅ¸ÀÔÀÇ price(°´Ã¼ º¯¼ö)
-	String color;	// StringÅ¸ÀÔÀÇ color(°´Ã¼ º¯¼ö
+	String name;	// Stringíƒ€ì…ì˜ name(ê°ì²´ ë³€ìˆ˜)
+	int price;		// intíƒ€ì…ì˜ price(ê°ì²´ ë³€ìˆ˜)
+	String color;	// Stringíƒ€ì…ì˜ color(ê°ì²´ ë³€ìˆ˜
 	
-	// ÃÊ±âÈ­ »ı¼ºÀÚ
-	public Car(String name, int price, String color) {	// Car¸Ş¼Òµå ¿ÜºÎ·ÎºÎÅÍ StringÅ¸ÀÔÀÇ name, intÅ¸ÀÔÀÇ price, StringÅ¸ÀÔÀÇ color¸¦ ¹ŞÀ½
-		this.name = name;	// this.name == ¸ÇÀ§¿¡ ¼±¾ğµÈ String nameÀ» ÀÇ¹ÌÇÏ°í nameÀº Main¿¡¼­ ¸Ş¼Òµå¸¦ ºÎ¸¦ ¶§ »ç¿ëÇÑ name°ª
-		this.price = price;	// this.price == ¸ÇÀ§¿¡ ¼±¾ğµÈ int priceÀ» ÀÇ¹ÌÇÏ°í priceÀº Main¿¡¼­ ¸Ş¼Òµå¸¦ ºÎ¸¦ ¶§ »ç¿ëÇÑ price°ª
-		this.color = color;	// this.color == ¸ÇÀ§¿¡ ¼±¾ğµÈ String colorÀ» ÀÇ¹ÌÇÏ°í colorÀº Main¿¡¼­ ¸Ş¼Òµå¸¦ ºÎ¸¦ ¶§ »ç¿ëÇÑ color°ª
+	// ì´ˆê¸°í™” ìƒì„±ì
+	public Car(String name, int price, String color) {	// Carë©”ì†Œë“œ ì™¸ë¶€ë¡œë¶€í„° Stringíƒ€ì…ì˜ name, intíƒ€ì…ì˜ price, Stringíƒ€ì…ì˜ colorë¥¼ ë°›ìŒ
+		this.name = name;	// this.name == ë§¨ìœ„ì— ì„ ì–¸ëœ String nameì„ ì˜ë¯¸í•˜ê³  nameì€ Mainì—ì„œ ë©”ì†Œë“œë¥¼ ë¶€ë¥¼ ë•Œ ì‚¬ìš©í•œ nameê°’
+		this.price = price;	// this.price == ë§¨ìœ„ì— ì„ ì–¸ëœ int priceì„ ì˜ë¯¸í•˜ê³  priceì€ Mainì—ì„œ ë©”ì†Œë“œë¥¼ ë¶€ë¥¼ ë•Œ ì‚¬ìš©í•œ priceê°’
+		this.color = color;	// this.color == ë§¨ìœ„ì— ì„ ì–¸ëœ String colorì„ ì˜ë¯¸í•˜ê³  colorì€ Mainì—ì„œ ë©”ì†Œë“œë¥¼ ë¶€ë¥¼ ë•Œ ì‚¬ìš©í•œ colorê°’
 	}
 	
-	public void go() {	// go ¸Ş¼Òµå
-		System.out.println("¾ÕÀ¸·Î °©´Ï´Ù");	// "¾ÕÀ¸·Î °©´Ï´Ù" Ãâ·Â
+	public void go() {	// go ë©”ì†Œë“œ
+		System.out.println("ì•ìœ¼ë¡œ ê°‘ë‹ˆë‹¤");	// "ì•ìœ¼ë¡œ ê°‘ë‹ˆë‹¤" ì¶œë ¥
 	}
-	public void engineOn() {	// engineOn ¸Ş¼Òµå
-		System.out.println("¿­¼è·Î ½Ãµ¿À» Ä×½À´Ï´Ù");	// "¿­¼è·Î ½Ãµ¿À» Ä×½À´Ï´Ù" Ãâ·Â
+	public void engineOn() {	// engineOn ë©”ì†Œë“œ
+		System.out.println("ì—´ì‡ ë¡œ ì‹œë™ì„ ì¼°ìŠµë‹ˆë‹¤");	// "ì—´ì‡ ë¡œ ì‹œë™ì„ ì¼°ìŠµë‹ˆë‹¤" ì¶œë ¥
 	}
-	public void show() {	// show ¸Ş¼Òµå
-		System.out.println("---ÀÚµ¿Â÷ Á¤º¸---");	// "---ÀÚµ¿Â÷ Á¤º¸---" Ãâ·Â
-		System.out.println("Â÷ÁÖ : " + this.name);	// "Â÷ÁÖ : " CarÅ¸ÀÔ name
-		System.out.println("»ö»ó : " + this.color);	// "»ö»ó : " CarÅ¸ÀÔ color
-		System.out.println("°¡°İ : " + this.price + "¸¸¿ø");	// "°¡°İ : " CarÅ¸ÀÔ price
+	public void show() {	// show ë©”ì†Œë“œ
+		System.out.println("---ìë™ì°¨ ì •ë³´---");	// "---ìë™ì°¨ ì •ë³´---" ì¶œë ¥
+		System.out.println("ì°¨ì£¼ : " + this.name);	// "ì°¨ì£¼ : " Caríƒ€ì… name
+		System.out.println("ìƒ‰ìƒ : " + this.color);	// "ìƒ‰ìƒ : " Caríƒ€ì… color
+		System.out.println("ê°€ê²© : " + this.price + "ë§Œì›");	// "ê°€ê²© : " Caríƒ€ì… price
 	}
 }

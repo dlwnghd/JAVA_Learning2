@@ -4,42 +4,42 @@ public class SuperCar extends Car{
 	String mode;
 	
 	// alt + shift + s > o > enter
-	// »ó¼Ó¹ŞÀº ÀÚ½Ä Å¬·¡½º´Â »ı¼ºÀÚ¸¦ È£ÃâÇÏ±â ÀÌÀü¿¡ ºÎ¸ğ »ı¼ºÀÚ¸¦ ¸ÕÀú È£ÃâÇÑ´Ù
-	public SuperCar(String name, int price, String color, String mode) {	// SuperCar¸Ş¼Òµå´Â (intÅ¸ÀÔ name, StringÅ¸ÀÔ color, StringÅ¸ÀÔ mode¸¦ ¹Ş¾Æ¿È)
-		super(name, price, color);	// super() --> ºÎ¸ğ»ı¼ºÀÚ¸¦ ÀÇ¹Ì Car()
-		this.mode = mode;	// myCar.mode¿¡ String mode°ª ÀúÀå
+	// ìƒì†ë°›ì€ ìì‹ í´ë˜ìŠ¤ëŠ” ìƒì„±ìë¥¼ í˜¸ì¶œí•˜ê¸° ì´ì „ì— ë¶€ëª¨ ìƒì„±ìë¥¼ ë¨¼ì € í˜¸ì¶œí•œë‹¤
+	public SuperCar(String name, int price, String color, String mode) {	// SuperCarë©”ì†Œë“œëŠ” (intíƒ€ì… name, Stringíƒ€ì… color, Stringíƒ€ì… modeë¥¼ ë°›ì•„ì˜´)
+		super(name, price, color);	// super() --> ë¶€ëª¨ìƒì„±ìë¥¼ ì˜ë¯¸ Car()
+		this.mode = mode;	// myCar.modeì— String modeê°’ ì €ì¥
 	}
 	
-	// ¸Ş¼Òµå ¿À¹ö¶óÀÌµù
-	// ÀçÁ¤ÀÇ
+	// ë©”ì†Œë“œ ì˜¤ë²„ë¼ì´ë”©
+	// ì¬ì •ì˜
 //	public void engineOn() {
-//		System.out.println("¹öÆ°À¸·Î ½Ãµ¿À» Ä×½À´Ï´Ù");
+//		System.out.println("ë²„íŠ¼ìœ¼ë¡œ ì‹œë™ì„ ì¼°ìŠµë‹ˆë‹¤");
 //	}
 	
-	@Override // ¾î³ëÅ×ÀÌ¼Ç ÁÖ¼®
-			// ÄÄÇ»ÅÍ¿¡°Ô ¾Ë·ÁÁÖ´Â ÁÖ¼®
-			// engine0nÀ¸·Î ÀÔ·ÂÇßÀ» °æ¿ì ¿À¹ö¶óÀÌµùÀÌ ¾Æ´Ï±â ¶§¹®¿¡
-			// ÀÌ·¯ÇÑ ¹ö±×È®ÀÎÀ» À§ÇØ ÇÊ¿äÇÔ
+	@Override // ì–´ë…¸í…Œì´ì…˜ ì£¼ì„
+			// ì»´í“¨í„°ì—ê²Œ ì•Œë ¤ì£¼ëŠ” ì£¼ì„
+			// engine0nìœ¼ë¡œ ì…ë ¥í–ˆì„ ê²½ìš° ì˜¤ë²„ë¼ì´ë”©ì´ ì•„ë‹ˆê¸° ë•Œë¬¸ì—
+			// ì´ëŸ¬í•œ ë²„ê·¸í™•ì¸ì„ ìœ„í•´ í•„ìš”í•¨
 	public void engineOn() {
-		System.out.println("¹öÆ°À¸·Î ½Ãµ¿À» Ä×½À´Ï´Ù");	// Ãâ·Â¹®
+		System.out.println("ë²„íŠ¼ìœ¼ë¡œ ì‹œë™ì„ ì¼°ìŠµë‹ˆë‹¤");	// ì¶œë ¥ë¬¸
 	}
-	// ´Ü¼ø Ãß°¡
+	// ë‹¨ìˆœ ì¶”ê°€
 	public void engineOn2() {
-		System.out.println("¹öÆ°À¸·Î ½Ãµ¿À» Ä×½À´Ï´Ù");	//Ãâ·Â¹®
+		System.out.println("ë²„íŠ¼ìœ¼ë¡œ ì‹œë™ì„ ì¼°ìŠµë‹ˆë‹¤");	//ì¶œë ¥ë¬¸
 	}
 	
 	public void openRoof() {
-		System.out.println("ÁöºØÀÌ ¿­·È½À´Ï´Ù.");	// Ãâ·Â¹®
+		System.out.println("ì§€ë¶•ì´ ì—´ë ¸ìŠµë‹ˆë‹¤.");	// ì¶œë ¥ë¬¸
 	}
 	
 	@Override
-	public void show() {	// show ¸Ş¼Òµå
-		super.show();	// super <- ºÎ¸ğ Å¬·¡½º, ºÎ¸ğ Å¬·¡½º¾È¿¡ ÀÖ´Â show »ç¿ë
-//		¡é¹İº¹µÇ´Â ±¸°£ ÁÖ¼®Ã³¸®
-//		System.out.println("---ÀÚµ¿Â÷ Á¤º¸---");
-//		System.out.println("Â÷ÁÖ : " + this.name);
-//		System.out.println("»ö»ó : " + this.color);
-//		System.out.println("°¡°İ : " + this.price + "¸¸¿ø");
-		System.out.println("¸ğµå : " + this.mode);	// Car Å¬·¡½º¿¡´Â ¾ø´Â °ªÀ» ¹Ş±âÀ§ÇØ ¿À¹ö¶óÀÌµùÀ¸·Î ¿©±â¼­ Ãß°¡ÀûÀ¸·Î ¹Ş¾ÆÁÖ°Ô ¸¸µë
+	public void show() {	// show ë©”ì†Œë“œ
+		super.show();	// super <- ë¶€ëª¨ í´ë˜ìŠ¤, ë¶€ëª¨ í´ë˜ìŠ¤ì•ˆì— ìˆëŠ” show ì‚¬ìš©
+//		â†“ë°˜ë³µë˜ëŠ” êµ¬ê°„ ì£¼ì„ì²˜ë¦¬
+//		System.out.println("---ìë™ì°¨ ì •ë³´---");
+//		System.out.println("ì°¨ì£¼ : " + this.name);
+//		System.out.println("ìƒ‰ìƒ : " + this.color);
+//		System.out.println("ê°€ê²© : " + this.price + "ë§Œì›");
+		System.out.println("ëª¨ë“œ : " + this.mode);	// Car í´ë˜ìŠ¤ì—ëŠ” ì—†ëŠ” ê°’ì„ ë°›ê¸°ìœ„í•´ ì˜¤ë²„ë¼ì´ë”©ìœ¼ë¡œ ì—¬ê¸°ì„œ ì¶”ê°€ì ìœ¼ë¡œ ë°›ì•„ì£¼ê²Œ ë§Œë“¬
 	}
 }

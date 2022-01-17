@@ -3,51 +3,51 @@ package inheritTest;
 public class Main {
 	public static void main(String[] args) {
 		Car momCar = new Car("MOM", 2000, "blue");
-		SuperCar myCar = new SuperCar("¹è»ó¿±",20000,"Red","Sports");
+		SuperCar myCar = new SuperCar("ë°°ìƒì—½",20000,"Red","Sports");
 		
 //		momCar.color = "blue";
 //		momCar.name = "MOM";
 //		momCar.price = 2000;
-//		momCar.mode = "Sports"; ÀÚ½Ä¿¡¸¸ ÀÖ´Â ÀÎ½ºÅÏ½º º¯¼ö´Â ºÎ¸ğÅ¸ÀÔ¿¡¼­ »ç¿ë ºÒ°¡
+//		momCar.mode = "Sports"; ìì‹ì—ë§Œ ìˆëŠ” ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ëŠ” ë¶€ëª¨íƒ€ì…ì—ì„œ ì‚¬ìš© ë¶ˆê°€
 		
-		myCar.color = "red"; // myCar°´Ã¼¿¡ colorÀÎ½ºÅÏ½º¿¡ "red" ÀúÀå
-		myCar.name = "ÀÌÁÖÈ«"; // myCar°´Ã¼¿¡ nameÀÎ½ºÅÏ½º¿¡ "ÀÌÁÖÈ«" ÀúÀå
-		myCar.price = 20000; // myCar°´Ã¼¿¡ priceÀÎ½ºÅÏ½º¿¡ 20000 ÀúÀå
-		myCar.mode = "Sports";	// myCar°´Ã¼¿¡ modeÀÎ½ºÅÏ½º¿¡ "Sports" ÀúÀå
+		myCar.color = "red"; // myCarê°ì²´ì— colorì¸ìŠ¤í„´ìŠ¤ì— "red" ì €ì¥
+		myCar.name = "ì´ì£¼í™"; // myCarê°ì²´ì— nameì¸ìŠ¤í„´ìŠ¤ì— "ì´ì£¼í™" ì €ì¥
+		myCar.price = 20000; // myCarê°ì²´ì— priceì¸ìŠ¤í„´ìŠ¤ì— 20000 ì €ì¥
+		myCar.mode = "Sports";	// myCarê°ì²´ì— modeì¸ìŠ¤í„´ìŠ¤ì— "Sports" ì €ì¥
 		
-		momCar.show();	// momCar°´Ã¼¿¡ show() ¸Ş¼Òµå
-		momCar.go();	// momCar°´Ã¼¿¡ go() ¸Ş¼Òµå
-		momCar.engineOn();	// ºÎ¸ğ¿¡¼­ Á¤ÀÇµÈ engineOn() È£Ãâ
-//		momCar.openRoof();	// ÀÚ½ÄÅ¬·¡½º¿¡¼­ »õ·Ó°Ô ¸¸µç ¸Ş¼Òµå´Â ºÎ¸ğÅ¬·¡½º¿¡¼­ »ç¿ëÀÌ ºÒ°¡´ÉÇÏ´Ù
+		momCar.show();	// momCarê°ì²´ì— show() ë©”ì†Œë“œ
+		momCar.go();	// momCarê°ì²´ì— go() ë©”ì†Œë“œ
+		momCar.engineOn();	// ë¶€ëª¨ì—ì„œ ì •ì˜ëœ engineOn() í˜¸ì¶œ
+//		momCar.openRoof();	// ìì‹í´ë˜ìŠ¤ì—ì„œ ìƒˆë¡­ê²Œ ë§Œë“  ë©”ì†Œë“œëŠ” ë¶€ëª¨í´ë˜ìŠ¤ì—ì„œ ì‚¬ìš©ì´ ë¶ˆê°€ëŠ¥í•˜ë‹¤
 		
-		myCar.show();	// myCar°´Ã¼¿¡ show() ¸Ş¼Òµå
-		myCar.go();		// myCar°´Ã¼¿¡ go() ¸Ş¼Òµå
-		myCar.engineOn();	// myCar°´Ã¼¿¡ ÀçÁ¤ÀÇµÈ engineOn() È£Ãâ
-		myCar.openRoof();	// myCar°´Ã¼¿¡ Á¤ÀÇµÈ openRoof() È£Ãâ
+		myCar.show();	// myCarê°ì²´ì— show() ë©”ì†Œë“œ
+		myCar.go();		// myCarê°ì²´ì— go() ë©”ì†Œë“œ
+		myCar.engineOn();	// myCarê°ì²´ì— ì¬ì •ì˜ëœ engineOn() í˜¸ì¶œ
+		myCar.openRoof();	// myCarê°ì²´ì— ì •ì˜ëœ openRoof() í˜¸ì¶œ
 //		myCar.engineOn2();
 		
-//		momCar.engineOn();°ú myCar.engineOn();À» ÅëÇØ ´ÙÇü¼ºÀ» È®ÀÎÇÒ ¼ö ÀÖ´Ù.
+//		momCar.engineOn();ê³¼ myCar.engineOn();ì„ í†µí•´ ë‹¤í˜•ì„±ì„ í™•ì¸í•  ìˆ˜ ìˆë‹¤.
 		
-		// »ó¼Ó¹ŞÀº ÀÚ½ÄÀº ºÎ¸ğÅ¸ÀÔµµ µÈ´Ù.
+		// ìƒì†ë°›ì€ ìì‹ì€ ë¶€ëª¨íƒ€ì…ë„ ëœë‹¤.
 		System.out.println(myCar instanceof SuperCar);	// true
 		System.out.println(momCar instanceof SuperCar);	// false
 		System.out.println(myCar instanceof Car);	// true
 		System.out.println(momCar instanceof Car);	// true
 		
-		// up casting(¾÷Ä³½ºÆÃ) : ÀÚ½ÄÀ» ºÎ¸ğÅ¸ÀÔÀ¸·Î ³Ö°Ú´Ù
+		// up casting(ì—…ìºìŠ¤íŒ…) : ìì‹ì„ ë¶€ëª¨íƒ€ì…ìœ¼ë¡œ ë„£ê² ë‹¤
 		Car c = myCar;
-//		c.mode();		// ¾÷Ä³½ºÆÃ µÈ´Ù¸é ÀÚ½Ä¿¡¼­ »õ·Ó°Ô ¸¸µç ¸â¹öµéÀº »ç¿ëÀÌ ºÒ°¡´ÉÇÏ´Ù
-//		c.openRoof();	// ÀÚ½Ä¸Ş¼Òµå¿¡¸¸ ÀÖ´Â ¸Ş¼Òµå ÀÌ±â ¶§¹®¿¡ ÀÛµ¿ÇÏÁö ¾ÊÀ½
-		c.engineOn();	// ÀçÁ¤ÀÇµÈ ¸Ş¼Òµå°¡ ±×´ë·Î È£ÃâµÈ´Ù
-		c.go();			// ºÎ¸ğ¿¡¸¸ Á¤ÀÇµÈ ¸Ş¼Òµåµµ »ç¿ë °¡´É
+//		c.mode();		// ì—…ìºìŠ¤íŒ… ëœë‹¤ë©´ ìì‹ì—ì„œ ìƒˆë¡­ê²Œ ë§Œë“  ë©¤ë²„ë“¤ì€ ì‚¬ìš©ì´ ë¶ˆê°€ëŠ¥í•˜ë‹¤
+//		c.openRoof();	// ìì‹ë©”ì†Œë“œì—ë§Œ ìˆëŠ” ë©”ì†Œë“œ ì´ê¸° ë•Œë¬¸ì— ì‘ë™í•˜ì§€ ì•ŠìŒ
+		c.engineOn();	// ì¬ì •ì˜ëœ ë©”ì†Œë“œê°€ ê·¸ëŒ€ë¡œ í˜¸ì¶œëœë‹¤
+		c.go();			// ë¶€ëª¨ì—ë§Œ ì •ì˜ëœ ë©”ì†Œë“œë„ ì‚¬ìš© ê°€ëŠ¥
 		
-		// down casting(´Ù¿îÄ³½ºÆÃ) : ºÎ¸ğ¸¦ ÀÚ½ÄÅ¸ÀÔÀ¸·Î ³Ö°Ú´Ù
+		// down casting(ë‹¤ìš´ìºìŠ¤íŒ…) : ë¶€ëª¨ë¥¼ ìì‹íƒ€ì…ìœ¼ë¡œ ë„£ê² ë‹¤
 //		SuperCar s = (SuperCar) momCar;
-//		s.go();		// ¿¹¿Ü ¿À·ù ¹ß»ı, ºÎ¸ğÅ¬·¡½º°¡ ´õ ÀÛ±â ¶§¹®¿¡ ºÎ¸¦ ¼ö ¾ø´Â ¸Ş¼Òµå
-		// ´Ù¿îÄ³½ºÆÃÀº ºÎ¸ğÅ¸ÀÔÀ¸·Î ¾÷Ä³½ºÆÃ µÈ ÀÚ½ÄÀ» ´Ù½Ã ÀÚ½ÄÅ¸ÀÔÀ¸·Î ¹Ù²Ù´Â °Í
-		SuperCar s = (SuperCar) c;	// SuperCarÅ¬·¡½º s°´Ã¼ = c¸¦ (SuperCar)Å¸ÀÔÀ¸·Î ¹Ù²Ş
-		s.go();	// s°´Ã¼ÀÇ go¸Ş¼Òµå Ãâ·Â
-		s.mode = "normal";	// s°´Ã¼ÀÇ mode°ª = "normal"ÀÌ´Ù
-		s.openRoof();	// s°´Ã¼ÀÇ openRoof¸Ş¼Òµå Ãâ·Â
+//		s.go();		// ì˜ˆì™¸ ì˜¤ë¥˜ ë°œìƒ, ë¶€ëª¨í´ë˜ìŠ¤ê°€ ë” ì‘ê¸° ë•Œë¬¸ì— ë¶€ë¥¼ ìˆ˜ ì—†ëŠ” ë©”ì†Œë“œ
+		// ë‹¤ìš´ìºìŠ¤íŒ…ì€ ë¶€ëª¨íƒ€ì…ìœ¼ë¡œ ì—…ìºìŠ¤íŒ… ëœ ìì‹ì„ ë‹¤ì‹œ ìì‹íƒ€ì…ìœ¼ë¡œ ë°”ê¾¸ëŠ” ê²ƒ
+		SuperCar s = (SuperCar) c;	// SuperCarí´ë˜ìŠ¤ sê°ì²´ = cë¥¼ (SuperCar)íƒ€ì…ìœ¼ë¡œ ë°”ê¿ˆ
+		s.go();	// sê°ì²´ì˜ goë©”ì†Œë“œ ì¶œë ¥
+		s.mode = "normal";	// sê°ì²´ì˜ modeê°’ = "normal"ì´ë‹¤
+		s.openRoof();	// sê°ì²´ì˜ openRoofë©”ì†Œë“œ ì¶œë ¥
 	}
 }

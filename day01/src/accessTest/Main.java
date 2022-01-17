@@ -2,14 +2,14 @@ package accessTest;
 
 public class Main {
 	public static void main(String[] args) {
-		Test t = new Test();	// TestÅ¸ÀÔÀÇ t°´Ã¼ = ¿¬»êÀÚ new Student()·Î ¸Å¸ğ¸® À§Ä¡¸¦ ¾Ë·ÁÁÜ
-//		System.out.println(t.a); private »ç¿ë ºÒ°¡
-		System.out.println(t.b);	// protected »ç¿ë °¡´É
-		System.out.println(t.c);	// default »ç¿ë °¡´É
-		System.out.println(t.d);	// public »ç¿ë °¡´É
-//		t.f1(); privateÀº »ç¿ë ºÒ°¡
-		t.f2();	// protected ¸Ş¼Òµå »ç¿ë °¡´É
-		t.f3();	// default ¸Ş¼Òµå »ç¿ë °¡´É
-		t.f4();	// public ¸Ş¼Òµå »ç¿ë °¡´É
+		Test t = new Test();	// Testíƒ€ì…ì˜ tê°ì²´ = ì—°ì‚°ì new Student()ë¡œ ë§¤ëª¨ë¦¬ ìœ„ì¹˜ë¥¼ ì•Œë ¤ì¤Œ
+//		System.out.println(t.a); private ì‚¬ìš© ë¶ˆê°€
+		System.out.println(t.b);	// protected ì‚¬ìš© ê°€ëŠ¥
+		System.out.println(t.c);	// default ì‚¬ìš© ê°€ëŠ¥
+		System.out.println(t.d);	// public ì‚¬ìš© ê°€ëŠ¥
+//		t.f1(); privateì€ ì‚¬ìš© ë¶ˆê°€
+		t.f2();	// protected ë©”ì†Œë“œ ì‚¬ìš© ê°€ëŠ¥
+		t.f3();	// default ë©”ì†Œë“œ ì‚¬ìš© ê°€ëŠ¥
+		t.f4();	// public ë©”ì†Œë“œ ì‚¬ìš© ê°€ëŠ¥
 	}
 }

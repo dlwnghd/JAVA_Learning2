@@ -2,60 +2,60 @@ package day01;
 
 import java.util.Scanner;
 
-// ½Ç¹«¿¡¼­´Â °øµ¿ÀÛ¾÷ÀÌ Áß¿äÇÏ±â ¶§¹®¿¡
-// Class¸¦ ÇÏ³ªÀÇ ÆÄÀÏ¿¡ ¸ğµç °ÍÀ» ¸¸µé¾î µÎÁö ¾ÊÀ½
+// ì‹¤ë¬´ì—ì„œëŠ” ê³µë™ì‘ì—…ì´ ì¤‘ìš”í•˜ê¸° ë•Œë¬¸ì—
+// Classë¥¼ í•˜ë‚˜ì˜ íŒŒì¼ì— ëª¨ë“  ê²ƒì„ ë§Œë“¤ì–´ ë‘ì§€ ì•ŠìŒ
 
 public class ClassTest {
 	public static void main(String[] args) {
-		Student kim = new Student("±èÃ¶¼ö", 90, 70);	// °´Ã¼ »ı¼º
-		Student park = new Student("¹Ú¿µÈñ", 100, 80);	// °´Ã¼ »ı¼º
-		// »õ·Î¿î ÇĞ»ıÀÌ ¿È(ÀüÇĞ»ı)
-		Student s = new Student();	// StudentÅ¸ÀÔÀÇ s°´Ã¼ = ¿¬»êÀÚ new Student()·Î ¸Å¸ğ¸® À§Ä¡¸¦ ¾Ë·ÁÁÜ
+		Student kim = new Student("ê¹€ì² ìˆ˜", 90, 70);	// ê°ì²´ ìƒì„±
+		Student park = new Student("ë°•ì˜í¬", 100, 80);	// ê°ì²´ ìƒì„±
+		// ìƒˆë¡œìš´ í•™ìƒì´ ì˜´(ì „í•™ìƒ)
+		Student s = new Student();	// Studentíƒ€ì…ì˜ sê°ì²´ = ì—°ì‚°ì new Student()ë¡œ ë§¤ëª¨ë¦¬ ìœ„ì¹˜ë¥¼ ì•Œë ¤ì¤Œ
 		
-		int[] ar = {10, 20, 30};	// ¾Æ·¡ ÄÚµå ÀÌÇØ½ÃÅ°±â ¿ëµµ
-		Student[] students = {new Student("±èÃ¶¼ö", 90, 70),	// Student¹è¿­ student¶ó´Â ÀÌ¸§À¸·Î [0] = {"±èÃ¶¼ö", 90, 70}À» °¡Áü
-								new Student("¹Ú¿µÈñ", 100, 80),	// Student¹è¿­ student¶ó´Â ÀÌ¸§À¸·Î [1] = {"±èÃ¶¼ö", 90, 70}À» °¡Áü
-								new Student("È«±æµ¿", 50, 60)};	// Student¹è¿­ student¶ó´Â ÀÌ¸§À¸·Î [1] = {"±èÃ¶¼ö", 90, 70}À» °¡Áü
+		int[] ar = {10, 20, 30};	// ì•„ë˜ ì½”ë“œ ì´í•´ì‹œí‚¤ê¸° ìš©ë„
+		Student[] students = {new Student("ê¹€ì² ìˆ˜", 90, 70),	// Studentë°°ì—´ studentë¼ëŠ” ì´ë¦„ìœ¼ë¡œ [0] = {"ê¹€ì² ìˆ˜", 90, 70}ì„ ê°€ì§
+								new Student("ë°•ì˜í¬", 100, 80),	// Studentë°°ì—´ studentë¼ëŠ” ì´ë¦„ìœ¼ë¡œ [1] = {"ê¹€ì² ìˆ˜", 90, 70}ì„ ê°€ì§
+								new Student("í™ê¸¸ë™", 50, 60)};	// Studentë°°ì—´ studentë¼ëŠ” ì´ë¦„ìœ¼ë¡œ [1] = {"ê¹€ì² ìˆ˜", 90, 70}ì„ ê°€ì§
 		
-		// ÇĞ»ı ÀÌ¸§À» ÀÔ·Â ¹Ş¾Æ¼­
-		// ÇØ´ç ÇĞ»ıÀÇ ¼ºÀû Á¤º¸¸¦ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
-		// ÀÌ ÇĞ±³¿¡´Â 3 ¸íÀÇ ÇĞ»ıÀÌ ÀÖ°í, Á¤º¸´Â students¶ó´Â ¹è¿­¿¡ ÀúÀåµÇ¾îÀÖ´Ù
-		Scanner sc = new Scanner(System.in);	// Scanner¸¦ scanÀ¸·Î »ç¿ëÇÑ´Ù°í ÄÄÇ»ÅÍ¿¡°Ô ¾Ë·ÁÁÜ
-		System.out.print("ÇĞ»ı ÀÌ¸§ ÀÔ·Â >>");		// "ÇĞ»ı ÀÌ¸§ ÀÔ·Â >>" Ãâ·Â
-		String Searchname = sc.nextLine();		// StringÅ¸ÀÔ SearchnameÀ» »ç¿ëÀÚ·ÎºÎÅÍ ÀÔ·Â°ªÀ» ¹Ş¾Æ¼­ ÀúÀå
-		boolean check = false;	// flag º¯¼ö : ¾îµğ±îÁö ¿Ô´ÂÁö È®ÀÎÇÏ±â À§ÇÑ º¯¼ö
+		// í•™ìƒ ì´ë¦„ì„ ì…ë ¥ ë°›ì•„ì„œ
+		// í•´ë‹¹ í•™ìƒì˜ ì„±ì  ì •ë³´ë¥¼ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨
+		// ì´ í•™êµì—ëŠ” 3 ëª…ì˜ í•™ìƒì´ ìˆê³ , ì •ë³´ëŠ” studentsë¼ëŠ” ë°°ì—´ì— ì €ì¥ë˜ì–´ìˆë‹¤
+		Scanner sc = new Scanner(System.in);	// Scannerë¥¼ scanìœ¼ë¡œ ì‚¬ìš©í•œë‹¤ê³  ì»´í“¨í„°ì—ê²Œ ì•Œë ¤ì¤Œ
+		System.out.print("í•™ìƒ ì´ë¦„ ì…ë ¥ >>");		// "í•™ìƒ ì´ë¦„ ì…ë ¥ >>" ì¶œë ¥
+		String Searchname = sc.nextLine();		// Stringíƒ€ì… Searchnameì„ ì‚¬ìš©ìë¡œë¶€í„° ì…ë ¥ê°’ì„ ë°›ì•„ì„œ ì €ì¥
+		boolean check = false;	// flag ë³€ìˆ˜ : ì–´ë””ê¹Œì§€ ì™”ëŠ”ì§€ í™•ì¸í•˜ê¸° ìœ„í•œ ë³€ìˆ˜
 		
-		for (Student st : students) {	// ºü¸¥ for¹®À¸·Î, StudentÅ¸ÀÔÀÇ st¸¦ ¼±¾ğÇÔ°ú µ¿½Ã¿¡ stÀÇ °ªÀ» students¾ÈÀÇ °ª ÀüÃ¼¸¦ ¹İº¹ÇÏ´Â µ¿¾È
-			if(st.name.equals(Searchname)) {	// st.name°ªÀÌ Searchname°ªÀÌ °°´Ù¸é
-				check = true;	// Ã£´Â ÀÌ¸§ÀÌ ÀÖ´Ù¸é check = true°ªÀÌ µÊ
-				st.show();		// StudentÅ¸ÀÔ ³»ºÎ¿¡ show¸Ş¼Òµå°¡ ÀÖ±â ¶§¹®¿¡, st.show();¸¦ ÅëÇØ ¹è¿­ÀÇ °ª¸¶´Ù show¸Ş¼Òµå¸¦ »ç¿ë
+		for (Student st : students) {	// ë¹ ë¥¸ forë¬¸ìœ¼ë¡œ, Studentíƒ€ì…ì˜ stë¥¼ ì„ ì–¸í•¨ê³¼ ë™ì‹œì— stì˜ ê°’ì„ studentsì•ˆì˜ ê°’ ì „ì²´ë¥¼ ë°˜ë³µí•˜ëŠ” ë™ì•ˆ
+			if(st.name.equals(Searchname)) {	// st.nameê°’ì´ Searchnameê°’ì´ ê°™ë‹¤ë©´
+				check = true;	// ì°¾ëŠ” ì´ë¦„ì´ ìˆë‹¤ë©´ check = trueê°’ì´ ë¨
+				st.show();		// Studentíƒ€ì… ë‚´ë¶€ì— showë©”ì†Œë“œê°€ ìˆê¸° ë•Œë¬¸ì—, st.show();ë¥¼ í†µí•´ ë°°ì—´ì˜ ê°’ë§ˆë‹¤ showë©”ì†Œë“œë¥¼ ì‚¬ìš©
 			}
 		}
-		if(check == false) {	// Ã£´Â ÀÌ¸§ÀÌ ¾ø´Ù¸é check°ªÀÌ º¯°æµÇÁö ¾Ê¾ÒÀ¸¹Ç·Î
-			System.out.println("ÇØ´ç ÇĞ»ıÀº Ã£À» ¼ö ¾ø½À´Ï´Ù.");	// "ÇØ´ç ÇĞ»ıÀº Ã£À» ¼ö ¾ø½À´Ï´Ù." Ãâ·Â
+		if(check == false) {	// ì°¾ëŠ” ì´ë¦„ì´ ì—†ë‹¤ë©´ checkê°’ì´ ë³€ê²½ë˜ì§€ ì•Šì•˜ìœ¼ë¯€ë¡œ
+			System.out.println("í•´ë‹¹ í•™ìƒì€ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");	// "í•´ë‹¹ í•™ìƒì€ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤." ì¶œë ¥
 		}
 		
-		// ºü¸¥ for¹®À¸·Î Ãâ·Â
-		for(Student st : students) {	// StudentÅ¸ÀÔÀ¸·Î st¸¦ studentsµ¥ÀÌÅÍ ±æÀÌµ¿¾È
-			st.show();	// StudentÅ¸ÀÔ ³»ºÎ¿¡ show¸Ş¼Òµå°¡ ÀÖ±â ¶§¹®¿¡, st.show();¸¦ ÅëÇØ ¹è¿­ÀÇ °ª¸¶´Ù show¸Ş¼Òµå¸¦ »ç¿ë
+		// ë¹ ë¥¸ forë¬¸ìœ¼ë¡œ ì¶œë ¥
+		for(Student st : students) {	// Studentíƒ€ì…ìœ¼ë¡œ stë¥¼ studentsë°ì´í„° ê¸¸ì´ë™ì•ˆ
+			st.show();	// Studentíƒ€ì… ë‚´ë¶€ì— showë©”ì†Œë“œê°€ ìˆê¸° ë•Œë¬¸ì—, st.show();ë¥¼ í†µí•´ ë°°ì—´ì˜ ê°’ë§ˆë‹¤ showë©”ì†Œë“œë¥¼ ì‚¬ìš©
 		}
 		
 		
-//		Student kim = new Student();	// °´Ã¼ »ı¼º
-//		Student park = new Student();	// °´Ã¼ »ı¼º
+//		Student kim = new Student();	// ê°ì²´ ìƒì„±
+//		Student park = new Student();	// ê°ì²´ ìƒì„±
 		
-//		kim.name = "±èÃ¶¼ö";	// StudentÅ¸ÀÔ kim°´Ã¼ÀÇ name¿¡ "±èÃ¶¼ö" ÀúÀå
-//		kim.kor = 90;		// StudentÅ¸ÀÔ kim°´Ã¼ÀÇ kor¿¡ 90 ÀúÀå
-//		kim.eng = 70;		// StudentÅ¸ÀÔ kim°´Ã¼ÀÇ eng¿¡ 70 ÀúÀå
+//		kim.name = "ê¹€ì² ìˆ˜";	// Studentíƒ€ì… kimê°ì²´ì˜ nameì— "ê¹€ì² ìˆ˜" ì €ì¥
+//		kim.kor = 90;		// Studentíƒ€ì… kimê°ì²´ì˜ korì— 90 ì €ì¥
+//		kim.eng = 70;		// Studentíƒ€ì… kimê°ì²´ì˜ engì— 70 ì €ì¥
 //		
-//		park.name = "¹Ú¿µÈñ";	// StudentÅ¸ÀÔ park°´Ã¼ÀÇ name¿¡ "¹Ú¿µÈñ" ÀúÀå
-//		park.kor = 100;		// StudentÅ¸ÀÔ park°´Ã¼ÀÇ kor¿¡ 100 ÀúÀå
-//		park.eng = 80;		// StudentÅ¸ÀÔ park°´Ã¼ÀÇ eng¿¡ 80 ÀúÀå
+//		park.name = "ë°•ì˜í¬";	// Studentíƒ€ì… parkê°ì²´ì˜ nameì— "ë°•ì˜í¬" ì €ì¥
+//		park.kor = 100;		// Studentíƒ€ì… parkê°ì²´ì˜ korì— 100 ì €ì¥
+//		park.eng = 80;		// Studentíƒ€ì… parkê°ì²´ì˜ engì— 80 ì €ì¥
 //		
-//		kim.show();		// Student Å¬·¡½º ³»ÀÇ kim³»ºÎ¿¡ show¸Ş¼Òµå »ç¿ë
-//		park.show();	// Student Å¬·¡½º ³»ÀÇ park³»ºÎ¿¡ show¸Ş¼Òµå »ç¿ë
+//		kim.show();		// Student í´ë˜ìŠ¤ ë‚´ì˜ kimë‚´ë¶€ì— showë©”ì†Œë“œ ì‚¬ìš©
+//		park.show();	// Student í´ë˜ìŠ¤ ë‚´ì˜ parkë‚´ë¶€ì— showë©”ì†Œë“œ ì‚¬ìš©
 		
-		// Å¬·¡½º Å¸ÀÔÀÌ ¿ä¼Ò·Î µé¾îÀÖ´Â ¹è¿­
+		// í´ë˜ìŠ¤ íƒ€ì…ì´ ìš”ì†Œë¡œ ë“¤ì–´ìˆëŠ” ë°°ì—´
 //		students[0].show(); // kim.show();
 //		students[1].show(); // park.show();
 //		students[2].show();	// s.show();

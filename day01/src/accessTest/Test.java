@@ -1,36 +1,36 @@
 package accessTest;
 
 public class Test {
-	private int a;		// privated Á¤ÀÇ
-	protected int b;	// protected Á¤ÀÇ
-	int c;				// default Á¤ÀÇ
-	public int d;		// public Á¤ÀÇ
+	private int a;		// privated ì •ì˜
+	protected int b;	// protected ì •ì˜
+	int c;				// default ì •ì˜
+	public int d;		// public ì •ì˜
 
-	public void f() {	// f ¸Ş¼Òµå
-		System.out.println("°°Àº Å¬·¡½º¿¡¼­ »ç¿ë°¡´ÉÇÑÁö È®ÀÎ¿ë ¸Ş¼Òµå");
-		System.out.println(a);	// private °¡´É
-		System.out.println(b);	// protected °¡´É
-		System.out.println(c);	// default °¡´É
-		System.out.println(d);	// public °¡´É
-		f1();	// private °¡´É
-		f2();	// protected °¡´É
-		f3();	// default °¡´É
-		f4();	// public °¡´É
+	public void f() {	// f ë©”ì†Œë“œ
+		System.out.println("ê°™ì€ í´ë˜ìŠ¤ì—ì„œ ì‚¬ìš©ê°€ëŠ¥í•œì§€ í™•ì¸ìš© ë©”ì†Œë“œ");
+		System.out.println(a);	// private ê°€ëŠ¥
+		System.out.println(b);	// protected ê°€ëŠ¥
+		System.out.println(c);	// default ê°€ëŠ¥
+		System.out.println(d);	// public ê°€ëŠ¥
+		f1();	// private ê°€ëŠ¥
+		f2();	// protected ê°€ëŠ¥
+		f3();	// default ê°€ëŠ¥
+		f4();	// public ê°€ëŠ¥
 	}
 
 	private void f1() {
-		System.out.println("private ¸Ş¼Òµå"); // Ãâ·Â¹®
+		System.out.println("private ë©”ì†Œë“œ"); // ì¶œë ¥ë¬¸
 	}
 
 	protected void f2() {
-		System.out.println("protected ¸Ş¼Òµå"); // Ãâ·Â¹®
+		System.out.println("protected ë©”ì†Œë“œ"); // ì¶œë ¥ë¬¸
 	}
 
 	void f3() {
-		System.out.println("default ¸Ş¼Òµå"); // Ãâ·Â¹®
+		System.out.println("default ë©”ì†Œë“œ"); // ì¶œë ¥ë¬¸
 	}
 
 	public void f4() {
-		System.out.println("public ¸Ş¼Òµå"); // Ãâ·Â¹®
+		System.out.println("public ë©”ì†Œë“œ"); // ì¶œë ¥ë¬¸
 	}
 }

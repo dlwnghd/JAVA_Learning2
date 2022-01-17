@@ -1,24 +1,24 @@
 package day02;
 
 public class Student {
-	// ¿©·¯°¡Áö º¯¼öµéÀÇ Á¢±Ù Á¦¾îÀÚ
-	// private : ¿À·ÎÁö º»ÀÎ Å¬·¡½º ¾È¿¡¼­¸¸ »ç¿ë °¡´É
-	private String name;	// private Á¢±Ù Á¦¾îÀÚÀÇ StringÅ¸ÀÔÀÇ name(ÀÎ½ºÅÏ½º(°´Ã¼) º¯¼ö)
-	int age;	// intÅ¸ÀÔÀÇ age(ÀÎ½ºÅÏ½º(°´Ã¼) º¯¼ö)
+	// ì—¬ëŸ¬ê°€ì§€ ë³€ìˆ˜ë“¤ì˜ ì ‘ê·¼ ì œì–´ì
+	// private : ì˜¤ë¡œì§€ ë³¸ì¸ í´ë˜ìŠ¤ ì•ˆì—ì„œë§Œ ì‚¬ìš© ê°€ëŠ¥
+	private String name;	// private ì ‘ê·¼ ì œì–´ìì˜ Stringíƒ€ì…ì˜ name(ì¸ìŠ¤í„´ìŠ¤(ê°ì²´) ë³€ìˆ˜)
+	int age;	// intíƒ€ì…ì˜ age(ì¸ìŠ¤í„´ìŠ¤(ê°ì²´) ë³€ìˆ˜)
 	
-	// ¸Ş¼Òµå °ÔÅÍ ¼¼ÅÍ ´ÜÃàÅ°
+	// ë©”ì†Œë“œ ê²Œí„° ì„¸í„° ë‹¨ì¶•í‚¤
 	// alt + shift + s > r > alt + a > alt + r
-	public String getName() {	// public StringÅ¸ÀÔÀ¸·Î °ªÀ» ¹İÈ¯ÇØÁÖ´Â getName¸Ş¼Òµå
-		return name;	// name°ªÀ» ¹İÈ¯ÇØ ÁÖ°í, ¸Ş¼Òµå Á¾·á
+	public String getName() {	// public Stringíƒ€ì…ìœ¼ë¡œ ê°’ì„ ë°˜í™˜í•´ì£¼ëŠ” getNameë©”ì†Œë“œ
+		return name;	// nameê°’ì„ ë°˜í™˜í•´ ì£¼ê³ , ë©”ì†Œë“œ ì¢…ë£Œ
 	}
-	public void setName(String name) {	// setName¸Ş¼Òµå ¿ÜºÎ·ÎºÎÅÍ StringÅ¸ÀÔÀÇ name°ªÀ» ¹ŞÀ½
-		this.name = name;	// this.name == ¸ÇÀ§¿¡ ¼±¾ğµÇ private String nameÀ» ÀÇ¹ÌÇÏ°í nameÀº Main¿¡¼­ ¸Ş¼Òµå¸¦ ºÎ¸¦ ¶§ »ç¿ëÇÑ name°ª
+	public void setName(String name) {	// setNameë©”ì†Œë“œ ì™¸ë¶€ë¡œë¶€í„° Stringíƒ€ì…ì˜ nameê°’ì„ ë°›ìŒ
+		this.name = name;	// this.name == ë§¨ìœ„ì— ì„ ì–¸ë˜ private String nameì„ ì˜ë¯¸í•˜ê³  nameì€ Mainì—ì„œ ë©”ì†Œë“œë¥¼ ë¶€ë¥¼ ë•Œ ì‚¬ìš©í•œ nameê°’
 	}
-	public int getAge() {	// intÅ¸ÀÔÀ¸·Î °ªÀ» ¹İÈ¯ÇØÁÖ´Â getAge¸Ş¼Òµå
-		return age;	// age°ªÀ» ¹İÈ¯ÇØ ÁÖ°í, ¸Ş¼Òµå Á¾·á
+	public int getAge() {	// intíƒ€ì…ìœ¼ë¡œ ê°’ì„ ë°˜í™˜í•´ì£¼ëŠ” getAgeë©”ì†Œë“œ
+		return age;	// ageê°’ì„ ë°˜í™˜í•´ ì£¼ê³ , ë©”ì†Œë“œ ì¢…ë£Œ
 	}
-	public void setAge(int age) {	// setAge¸Ş¼Òµå ¿ÜºÎ·ÎºÎÅÍ intÅ¸ÀÔÀÇ age°ªÀ» ¹ŞÀ½
-		this.age = age;	// this.name == 7¹øÂ°ÁÙÀÇ int age;¿Í °°°í age´Â ¿ÜºÎ·ÎºÎÅÍ ¹ŞÀº °ª
+	public void setAge(int age) {	// setAgeë©”ì†Œë“œ ì™¸ë¶€ë¡œë¶€í„° intíƒ€ì…ì˜ ageê°’ì„ ë°›ìŒ
+		this.age = age;	// this.name == 7ë²ˆì§¸ì¤„ì˜ int age;ì™€ ê°™ê³  ageëŠ” ì™¸ë¶€ë¡œë¶€í„° ë°›ì€ ê°’
 	}
 	
 }

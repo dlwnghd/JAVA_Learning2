@@ -4,35 +4,35 @@ import accessTest.Test;
 
 public class Main {
 	public static void main(String[] args) {
-		Test t = new Test();	// TestÅ¸ÀÔÀÇ t°´Ã¼ = ¿¬»êÀÚ new Student()·Î ¸Å¸ğ¸® À§Ä¡¸¦ ¾Ë·ÁÁÜ
-		System.out.println(t.d); // public¸¸ »ç¿ë °¡´É
-		t.f4(); //public¸¸ »ç¿ë °¡´É
+		Test t = new Test();	// Testíƒ€ì…ì˜ tê°ì²´ = ì—°ì‚°ì new Student()ë¡œ ë§¤ëª¨ë¦¬ ìœ„ì¹˜ë¥¼ ì•Œë ¤ì¤Œ
+		System.out.println(t.d); // publicë§Œ ì‚¬ìš© ê°€ëŠ¥
+		t.f4(); //publicë§Œ ì‚¬ìš© ê°€ëŠ¥
 		
-		Korean kim = new Korean("±èÃ¶¼ö", 10);	// KoreanÅ¸ÀÔÀÇ kim°´Ã¼ = KoreanÅ¸ÀÔ("±èÃ¶¼ö", 10)À» ÀúÀå
-		Korean park = new Korean("¹Ú¿µÈñ", 20);	// KoreanÅ¸ÀÔÀÇ park°´Ã¼ = KoreanÅ¸ÀÔ("¹Ú¿µÈñ", 20)À» ÀúÀå
+		Korean kim = new Korean("ê¹€ì² ìˆ˜", 10);	// Koreaníƒ€ì…ì˜ kimê°ì²´ = Koreaníƒ€ì…("ê¹€ì² ìˆ˜", 10)ì„ ì €ì¥
+		Korean park = new Korean("ë°•ì˜í¬", 20);	// Koreaníƒ€ì…ì˜ parkê°ì²´ = Koreaníƒ€ì…("ë°•ì˜í¬", 20)ì„ ì €ì¥
 		
-		kim.name = "±è¼öÁ¤µÊ";		// KoreanÅ¸ÀÔ kimÀÇ name¿¡ "±è¼öÁ¤µÊ" ÀúÀå
-		System.out.println(kim.name);	// kim°´Ã¼ÀÇ name Ãâ·Â
-		System.out.println(park.name);	// park°´Ã¼ÀÇ name Ãâ·Â
+		kim.name = "ê¹€ìˆ˜ì •ë¨";		// Koreaníƒ€ì… kimì˜ nameì— "ê¹€ìˆ˜ì •ë¨" ì €ì¥
+		System.out.println(kim.name);	// kimê°ì²´ì˜ name ì¶œë ¥
+		System.out.println(park.name);	// parkê°ì²´ì˜ name ì¶œë ¥
 		
-		// ÀÌ ÄÚµå´Â »ç½Ç ÀÌÇØ¸¦ À§ÇØ ÀÛ¼º µÆÀ» »Ó ¿Ã¹Ù¸¥ ¹æ¹ıÀº
-		// Korean.country = "USA"; ·Î ÇØ¾ß ÇÑ´Ù.
-		kim.country = "USA";	// kim°´Ã¼ÀÇ countryº¯¼ö¿¡ "USA" ÀúÀå
-		// kim°´Ã¼ ³»ÀÇ country°ªÀ» "USA"·Î ¹Ù²Û´Ù°í ÇÏÁö¸¸ 
-		// country°¡ static Á¦¾îÀÚ(modifier)·Î ºÒ·Á¼­
-		// °ªÀ» °øÀ¯ÇÒ »ÓÀÌÁö, kimÀÌ³ª park °´Ã¼ ¾È¿¡ Á¸ÀçÇÏ´Â °ªÀº ¾Æ´Ï´Ù.
+		// ì´ ì½”ë“œëŠ” ì‚¬ì‹¤ ì´í•´ë¥¼ ìœ„í•´ ì‘ì„± ëì„ ë¿ ì˜¬ë°”ë¥¸ ë°©ë²•ì€
+		// Korean.country = "USA"; ë¡œ í•´ì•¼ í•œë‹¤.
+		kim.country = "USA";	// kimê°ì²´ì˜ countryë³€ìˆ˜ì— "USA" ì €ì¥
+		// kimê°ì²´ ë‚´ì˜ countryê°’ì„ "USA"ë¡œ ë°”ê¾¼ë‹¤ê³  í•˜ì§€ë§Œ 
+		// countryê°€ static ì œì–´ì(modifier)ë¡œ ë¶ˆë ¤ì„œ
+		// ê°’ì„ ê³µìœ í•  ë¿ì´ì§€, kimì´ë‚˜ park ê°ì²´ ì•ˆì— ì¡´ì¬í•˜ëŠ” ê°’ì€ ì•„ë‹ˆë‹¤.
 		
-		Korean.country = "USA";	// Korean°´Ã¼ÀÇ countryº¯¼ö¿¡ "USA" ÀúÀå
-		System.out.println(kim.country);	// kim°´Ã¼ÀÇ countryº¯¼ö Ãâ·Â
-		System.out.println(park.country);	// park°´Ã¼ÀÇ countryº¯¼ö Ãâ·Â
-		// ½ºÅÂÆ½ º¯¼ö´Â ¸ğµç ÀÎ½ºÅÏ½º(°´Ã¼)°¡ °ªÀ» °øÀ¯ÇÏ±â ¶§¹®¿¡
-		// ÀÎ½ºÅÏ½º°¡ Áß¿äÇÏÁö ¾Ê´Ù µû¶ó¼­ Å¬·¡½º¸í.º¯¼ö¸í À¸·Î »ç¿ëÇÒ ¼ö ÀÖ´Ù
-		System.out.println(Korean.country);	// Korean°´Ã¼ÀÇ countryº¯¼ö Ãâ·Â
+		Korean.country = "USA";	// Koreanê°ì²´ì˜ countryë³€ìˆ˜ì— "USA" ì €ì¥
+		System.out.println(kim.country);	// kimê°ì²´ì˜ countryë³€ìˆ˜ ì¶œë ¥
+		System.out.println(park.country);	// parkê°ì²´ì˜ countryë³€ìˆ˜ ì¶œë ¥
+		// ìŠ¤íƒœí‹± ë³€ìˆ˜ëŠ” ëª¨ë“  ì¸ìŠ¤í„´ìŠ¤(ê°ì²´)ê°€ ê°’ì„ ê³µìœ í•˜ê¸° ë•Œë¬¸ì—
+		// ì¸ìŠ¤í„´ìŠ¤ê°€ ì¤‘ìš”í•˜ì§€ ì•Šë‹¤ ë”°ë¼ì„œ í´ë˜ìŠ¤ëª….ë³€ìˆ˜ëª… ìœ¼ë¡œ ì‚¬ìš©í•  ìˆ˜ ìˆë‹¤
+		System.out.println(Korean.country);	// Koreanê°ì²´ì˜ countryë³€ìˆ˜ ì¶œë ¥
 		
-		kim.show();	// kim°´Ã¼ÀÇ show¸Ş¼Òµå Ãâ·Â
-		park.show();	// park°´Ã¼ÀÇ show¸Ş¼Òµå Ãâ·Â
+		kim.show();	// kimê°ì²´ì˜ showë©”ì†Œë“œ ì¶œë ¥
+		park.show();	// parkê°ì²´ì˜ showë©”ì†Œë“œ ì¶œë ¥
 		
-		Korean.show();	// Å¬·¡½º¸í.¸Ş¼Òµå¸í();
+		Korean.show();	// í´ë˜ìŠ¤ëª….ë©”ì†Œë“œëª…();
 		//
 	}
 }

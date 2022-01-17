@@ -2,13 +2,13 @@ package day02;
 
 public class Main {
 	public static void main(String[] args) {
-		Student kim = new Student();	// StudentÅ¸ÀÔÀÇ kim°´Ã¼ = »õ·Î¿î StudentÅ¸ÀÔÀ» ¹Ş¾Æ¿È
-		kim.setName("±èÃ¶¼ö");	// kim°´Ã¼ÀÇ setName¸Ş¼Òµå´Â "±èÃ¶¼ö"¶ó´Â °ªÀ» ¹ŞÀ½
-		System.out.println(kim.getName());	// kim.getName()¸Ş¼Òµå Ãâ·Â
+		Student kim = new Student();	// Studentíƒ€ì…ì˜ kimê°ì²´ = ìƒˆë¡œìš´ Studentíƒ€ì…ì„ ë°›ì•„ì˜´
+		kim.setName("ê¹€ì² ìˆ˜");	// kimê°ì²´ì˜ setNameë©”ì†Œë“œëŠ” "ê¹€ì² ìˆ˜"ë¼ëŠ” ê°’ì„ ë°›ìŒ
+		System.out.println(kim.getName());	// kim.getName()ë©”ì†Œë“œ ì¶œë ¥
 		
-//		kim.name = "±èÃ¶¼ö";	// kim°´Ã¼ÀÇ nameÀÎ½ºÅÏ½º¿¡ "±èÃ¶¼ö" ÀúÀå
-//		kim.age = 10;	// kim°´Ã¼ÀÇ ageÀÎ½ºÅÏ½º¿¡ 10 ÀúÀå
-//		kim.age = -2000;	// kim°´Ã¼ÀÇ ageÀÎ½ºÅÏ½º¿¡ -2000 ÀúÀå
-		// private º¯¼ö¿¡ °ªÀ» ¼³Á¤ÇÒ¶§´Â setter¸¦, º¯¼ö¿¡ ÀúÀåµÈ °ªÀ» °¡Á®¿Ã¶§´Â getter¸¦ »ç¿ëÇÑ´Ù
+//		kim.name = "ê¹€ì² ìˆ˜";	// kimê°ì²´ì˜ nameì¸ìŠ¤í„´ìŠ¤ì— "ê¹€ì² ìˆ˜" ì €ì¥
+//		kim.age = 10;	// kimê°ì²´ì˜ ageì¸ìŠ¤í„´ìŠ¤ì— 10 ì €ì¥
+//		kim.age = -2000;	// kimê°ì²´ì˜ ageì¸ìŠ¤í„´ìŠ¤ì— -2000 ì €ì¥
+		// private ë³€ìˆ˜ì— ê°’ì„ ì„¤ì •í• ë•ŒëŠ” setterë¥¼, ë³€ìˆ˜ì— ì €ì¥ëœ ê°’ì„ ê°€ì ¸ì˜¬ë•ŒëŠ” getterë¥¼ ì‚¬ìš©í•œë‹¤
 	}
 }

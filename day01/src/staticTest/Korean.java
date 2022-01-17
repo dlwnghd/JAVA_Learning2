@@ -1,25 +1,25 @@
 package staticTest;
 
 public class Korean {
-	String name; // ÀÎ½ºÅÏ½º(°´Ã¼) º¯¼ö, StringÅ¸ÀÔ name
-	int age;	// ÀÎ½ºÅÏ½º(°´Ã¼) º¯¼ö, intÅ¸ÀÔ age
-	static String country = "KOREA"; // Å¬·¡½º º¯¼ö
+	String name; // ì¸ìŠ¤í„´ìŠ¤(ê°ì²´) ë³€ìˆ˜, Stringíƒ€ì… name
+	int age;	// ì¸ìŠ¤í„´ìŠ¤(ê°ì²´) ë³€ìˆ˜, intíƒ€ì… age
+	static String country = "KOREA"; // í´ë˜ìŠ¤ ë³€ìˆ˜
 
-	// ÃÊ±âÈ­ »ı¼ºÀÚ ´ÜÃàÅ° : Alt + shift + s > o > enter
+	// ì´ˆê¸°í™” ìƒì„±ì ë‹¨ì¶•í‚¤ : Alt + shift + s > o > enter
 
-	public Korean(String name, int age/*, String country*/) { // Korean ¸Ş¼Òµå(String name, int age)¸¦ 
-		this.name = name;	// this·Î »ç¿ëÀÚ°¡ ºÎ¸£°íÀÚ ÇÏ´Â °ªÀÇ À§Ä¡¸¦ Ã£¾Æ.name°ªÀ» KoreanÀÇ ÀÔ·ÂÇÑ name°ª¿¡ ³Ö¾îÁÜ
-		this.age = age;		// this·Î »ç¿ëÀÚ°¡ ºÎ¸£°íÀÚ ÇÏ´Â °ªÀÇ À§Ä¡¸¦ Ã£¾Æ.age°ªÀ» KoreanÀÇ ÀÔ·ÂÇÑ age°ª¿¡ ³Ö¾îÁÜ
-//		this.country;	// staticÀ¸·Î Á¤ÀÇµÈ Å¸ÀÔÀº Áö¿ªº¯¼ö Ã³·³ ´Ù¸¥ ¸Ş¼Òµå¿¡¼­ »ç¿ëÇÏ°Å³ª ºÎ¸¦ ¼ö ¾ø´Ù
+	public Korean(String name, int age/*, String country*/) { // Korean ë©”ì†Œë“œ(String name, int age)ë¥¼ 
+		this.name = name;	// thisë¡œ ì‚¬ìš©ìê°€ ë¶€ë¥´ê³ ì í•˜ëŠ” ê°’ì˜ ìœ„ì¹˜ë¥¼ ì°¾ì•„.nameê°’ì„ Koreanì˜ ì…ë ¥í•œ nameê°’ì— ë„£ì–´ì¤Œ
+		this.age = age;		// thisë¡œ ì‚¬ìš©ìê°€ ë¶€ë¥´ê³ ì í•˜ëŠ” ê°’ì˜ ìœ„ì¹˜ë¥¼ ì°¾ì•„.ageê°’ì„ Koreanì˜ ì…ë ¥í•œ ageê°’ì— ë„£ì–´ì¤Œ
+//		this.country;	// staticìœ¼ë¡œ ì •ì˜ëœ íƒ€ì…ì€ ì§€ì—­ë³€ìˆ˜ ì²˜ëŸ¼ ë‹¤ë¥¸ ë©”ì†Œë“œì—ì„œ ì‚¬ìš©í•˜ê±°ë‚˜ ë¶€ë¥¼ ìˆ˜ ì—†ë‹¤
 	}
 
 	
-	// ½ºÅÂÆ½ ¸Ş¼Òµå / Á¤Àû ¸Ş¼Òµå
-	public static void show() { // ¸ğµç ÀÎ½ºÅÏ½º(°´Ã¼)¿¡¼­ µ¿ÀÏÇÏ°Ô µ¿ÀÛÇÏ´Â ¸Ş¼Òµå
-		System.out.println("static ¸Ş¼Òµå È£ÃâµÊ");	// "static ¸Ş¼Òµå È£ÃâµÊ" Ãâ·Â
-		System.out.println(country); // ÀÎ½ºÅÏ½º¸¶´Ù ´Ş¶óÁöÁö ¾Ê´Â ½ºÅÂÆ½ º¯¼ö´Â »ç¿ë°¡´É
-		// ÀÎ½ºÅÏ½º(°´Ã¼)¸¶´Ù ´Ş¶óÁö´Â ÀÎ½ºÅÏ½º(°´Ã¼)º¯¼ö´Â »ç¿ëÇÒ ¼ö ¾ø´Ù
-//		System.out.println(this.name); // this.name°ª Ãâ·Â
+	// ìŠ¤íƒœí‹± ë©”ì†Œë“œ / ì •ì  ë©”ì†Œë“œ
+	public static void show() { // ëª¨ë“  ì¸ìŠ¤í„´ìŠ¤(ê°ì²´)ì—ì„œ ë™ì¼í•˜ê²Œ ë™ì‘í•˜ëŠ” ë©”ì†Œë“œ
+		System.out.println("static ë©”ì†Œë“œ í˜¸ì¶œë¨");	// "static ë©”ì†Œë“œ í˜¸ì¶œë¨" ì¶œë ¥
+		System.out.println(country); // ì¸ìŠ¤í„´ìŠ¤ë§ˆë‹¤ ë‹¬ë¼ì§€ì§€ ì•ŠëŠ” ìŠ¤íƒœí‹± ë³€ìˆ˜ëŠ” ì‚¬ìš©ê°€ëŠ¥
+		// ì¸ìŠ¤í„´ìŠ¤(ê°ì²´)ë§ˆë‹¤ ë‹¬ë¼ì§€ëŠ” ì¸ìŠ¤í„´ìŠ¤(ê°ì²´)ë³€ìˆ˜ëŠ” ì‚¬ìš©í•  ìˆ˜ ì—†ë‹¤
+//		System.out.println(this.name); // this.nameê°’ ì¶œë ¥
 	}
 
 }
