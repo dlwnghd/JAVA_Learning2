@@ -21,14 +21,16 @@ public class Main {
 		s2.eat();
 
 		
-		Soilder s = new Soilder() {	// 클래스 생성	
+		Soilder s = new Soilder() {	// 익명의 내부 클래스 생성	
+			
+			// 일반 메소드
 			public void f() {
 				System.out.println("익명클래스에서 정의된 메소드");
 			}
 			
 			@Override
 			public void eat() {
-				System.out.println("오버라이딩 work");
+				System.out.println("오버라이딩 eat");
 			}
 
 			@Override
