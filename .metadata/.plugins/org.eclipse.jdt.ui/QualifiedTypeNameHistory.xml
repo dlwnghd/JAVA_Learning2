@@ -8,5 +8,11 @@
     <fullyQualifiedTypeName name="innerTest.Outer.InnerStatic"/>
     <fullyQualifiedTypeName name="day04.Soilder"/>
     <fullyQualifiedTypeName name="day04.SecondMan"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="day05.MyExceptionTest"/>
+    <fullyQualifiedTypeName name="day05.BadWordException"/>
+    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
 </qualifiedTypeNameHistroy>
