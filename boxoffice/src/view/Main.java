@@ -44,6 +44,7 @@ public class Main {
 				System.out.println("추가 성공!");
 				
 			}else if(choice == 2) {
+				// 영화 수정하기
 				// 영화 랭킹도 입력 받아서, 해당 랭킹 영화의 제목을 수정한다
 				System.out.println("랭킹 입력 >> ");
 				int rank = Integer.parseInt(sc.nextLine());

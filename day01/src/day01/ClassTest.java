@@ -5,17 +5,19 @@ import java.util.Scanner;
 // 실무에서는 공동작업이 중요하기 때문에
 // Class를 하나의 파일에 모든 것을 만들어 두지 않음
 
-public class ClassTest {
-	public static void main(String[] args) {
-		Student kim = new Student("김철수", 90, 70);	// 객체 생성
-		Student park = new Student("박영희", 100, 80);	// 객체 생성
-		// 새로운 학생이 옴(전학생)
-		Student s = new Student();	// Student타입의 s객체 = 연산자 new Student()로 매모리 위치를 알려줌
+public class ClassTest {	// ClassTest 클래스
+	public static void main(String[] args) {	// main 클래스
+//		Student kim = new Student("김철수", 90, 70);		// Student타입의 kim 객체 생성, 값은 Student타입 저장
+//		Student park = new Student("박영희", 100, 80);	// Student타입의 park 객체 생성, 값은 Student타입 저장
 		
-		int[] ar = {10, 20, 30};	// 아래 코드 이해시키기 용도
+		// 새로운 학생이 옴(전학생) : 이름, 국어점수, 영어점수 모름
+		// 기본 생성자 사용
+//		Student s = new Student();	// Student타입의 s객체 = 연산자 new Student()로 매모리 위치를 알려줌
+		
+		int[] ar = {10, 20, 30};	// 아래 코드 이해시키기 용도(위와 비슷한 느낌이다)
 		Student[] students = {new Student("김철수", 90, 70),	// Student배열 student라는 이름으로 [0] = {"김철수", 90, 70}을 가짐
-								new Student("박영희", 100, 80),	// Student배열 student라는 이름으로 [1] = {"김철수", 90, 70}을 가짐
-								new Student("홍길동", 50, 60)};	// Student배열 student라는 이름으로 [1] = {"김철수", 90, 70}을 가짐
+								new Student("박영희", 100, 80),	// Student배열 student라는 이름으로 [1] = {"박영희", 100, 80}을 가짐
+								new Student("홍길동", 50, 60)};	// Student배열 student라는 이름으로 [2] = {"홍길동", 50, 60}을 가짐
 		
 		// 학생 이름을 입력 받아서
 		// 해당 학생의 성적 정보를 출력하는 프로그램
@@ -25,6 +27,7 @@ public class ClassTest {
 		String Searchname = sc.nextLine();		// String타입 Searchname을 사용자로부터 입력값을 받아서 저장
 		boolean check = false;	// flag 변수 : 어디까지 왔는지 확인하기 위한 변수
 		
+		// 배열안에 클래스
 		for (Student st : students) {	// 빠른 for문으로, Student타입의 st를 선언함과 동시에 st의 값을 students안의 값 전체를 반복하는 동안
 			if(st.name.equals(Searchname)) {	// st.name값이 Searchname값이 같다면
 				check = true;	// 찾는 이름이 있다면 check = true값이 됨
@@ -41,6 +44,7 @@ public class ClassTest {
 		}
 		
 		
+		// ↑에 더 쉽게 표현함
 //		Student kim = new Student();	// 객체 생성
 //		Student park = new Student();	// 객체 생성
 		
@@ -56,8 +60,8 @@ public class ClassTest {
 //		park.show();	// Student 클래스 내의 park내부에 show메소드 사용
 		
 		// 클래스 타입이 요소로 들어있는 배열
-//		students[0].show(); // kim.show();
-//		students[1].show(); // park.show();
-//		students[2].show();	// s.show();
+//		students[0].show(); // studetns배열의 0번째의 show메소드 사용
+//		students[1].show(); // studetns배열의 1번째의 show메소드 사용
+//		students[2].show();	// studetns배열의 2번째의 show메소드 사용
 	}
 }

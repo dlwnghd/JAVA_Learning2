@@ -1,7 +1,7 @@
 package accessTest;
 
 public class Test {
-	private int a;		// privated 정의
+	private int a;		// private 정의
 	protected int b;	// protected 정의
 	int c;				// default 정의
 	public int d;		// public 정의
@@ -18,18 +18,22 @@ public class Test {
 		f4();	// public 가능
 	}
 
+	// private 메소드
 	private void f1() {
 		System.out.println("private 메소드"); // 출력문
 	}
 
+	// protected 메소드
 	protected void f2() {
 		System.out.println("protected 메소드"); // 출력문
 	}
 
+	// default 메소드
 	void f3() {
 		System.out.println("default 메소드"); // 출력문
 	}
 
+	//public 메소드
 	public void f4() {
 		System.out.println("public 메소드"); // 출력문
 	}

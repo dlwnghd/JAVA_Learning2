@@ -11,11 +11,12 @@ public class ListTest {
 		ArrayList<Integer> ar = new ArrayList</* Integer */>();	// Integer[] ar = new Integer();
 		System.out.println(ar);	// ar 출력
 		// ar이라는 ArrayList에 값을 추가하기
-		// add(요소(값)) --> 값을 리스트의 요로로 추가해준다
+		// add(요소(값)) --> 값을 리스트의 요소로 추가해준다
 		ar.add(10);	// 자동으로 boxing됨, int타입 10이 Integer타입 10으로 변경됨, ar에 10 추가
 		ar.add(35);	// 자동으로 boxing됨, int타입 35이 Integer타입 35으로 변경됨, ar에 35 추가
 		ar.add(15);	// 자동으로 boxing됨, int타입 15이 Integer타입 15으로 변경됨, ar에 15 추가
 		ar.add(10);	// 중복 허용, 순서가 존재
+		ar.remove(0);
 		System.out.println(ar);
 		
 		// size() : ArrayList 속의 요소 갯수를 int타입으로 return
