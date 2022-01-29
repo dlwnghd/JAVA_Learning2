@@ -6,7 +6,7 @@ public class SuperCar extends Car{
 	// alt + shift + s > o > enter
 	// 상속받은 자식 클래스는 생성자를 호출하기 이전에 부모 생성자를 먼저 호출한다
 	public SuperCar(String name, int price, String color, String mode) {	// SuperCar메소드는 (int타입 name, String타입 color, String타입 mode를 받아옴)
-		super(name, price, color);	// super() --> 부모생성자를 의미 Car()
+		super(name, price, color);	// super() --> 부모생성자를 의미 Car(), 부모생성자를 먼저 호출
 		this.mode = mode;	// myCar.mode에 String mode값 저장
 	}
 	
@@ -25,7 +25,7 @@ public class SuperCar extends Car{
 	}
 	// 단순 추가
 	public void engineOn2() {
-		System.out.println("버튼으로 시동을 켰습니다");	//출력문
+		System.out.println("버튼2로 시동을 켰습니다");	//출력문
 	}
 	
 	public void openRoof() {
@@ -34,7 +34,7 @@ public class SuperCar extends Car{
 	
 	@Override
 	public void show() {	// show 메소드
-		super.show();	// super <- 부모 클래스, 부모 클래스안에 있는 show 사용
+		super.show();	// super <- 부모 클래스, 부모 클래스안에 있는 show 사용, 메소드 호출
 //		↓반복되는 구간 주석처리
 //		System.out.println("---자동차 정보---");
 //		System.out.println("차주 : " + this.name);

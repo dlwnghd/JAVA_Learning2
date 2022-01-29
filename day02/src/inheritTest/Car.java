@@ -1,9 +1,13 @@
 package inheritTest;
 
 public class Car {
+	// 인스턴스 변수
 	String name;	// String타입의 name(객체 변수)
 	int price;		// int타입의 price(객체 변수)
 	String color;	// String타입의 color(객체 변수
+	
+	// 기본 생성자
+	public Car() {;}
 	
 	// 초기화 생성자
 	public Car(String name, int price, String color) {	// Car메소드 외부로부터 String타입의 name, int타입의 price, String타입의 color를 받음

@@ -2,10 +2,11 @@ package day02;
 
 public class Student {
 	// 여러가지 변수들의 접근 제어자
-	// private : 오로지 본인 클래스 안에서만 사용 가능
+	// private : 오로지 본인 클래스 안에서만 사용 가능(Student 클래스 내에서만 사용 가능)
 	private String name;	// private 접근 제어자의 String타입의 name(인스턴스(객체) 변수)
 	int age;	// int타입의 age(인스턴스(객체) 변수)
 	
+	// 메소드를 이용해서 우회적으로 Main에서 사용
 	// 메소드 게터 세터 단축키
 	// alt + shift + s > r > alt + a > alt + r
 	public String getName() {	// public String타입으로 값을 반환해주는 getName메소드
