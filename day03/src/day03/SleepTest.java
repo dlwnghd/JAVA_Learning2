@@ -7,11 +7,11 @@ public class SleepTest {
 		System.out.println("시작");	// "시작" 출력
 		for (int i = 0; i < 10; i++) {	// i는0; i가 10미만동안; i++
 			System.out.print("~");	// "~" 출력
-			try {
-				Thread.sleep(1000);	// 1초
-			} catch (InterruptedException e) {
+			try {	// {}안에 있는 코드를 실행하는데 오류가 발생하면 catch문 안에 있는 코드를 실행
+				Thread.sleep(1000);	// Thread클래스 의 sleep메소드, 1000 => 1초
+			} catch (InterruptedException e) {	// 오류 : InterruptedException타입 오류 객체 e가 발생하면 {} 실행
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+				e.printStackTrace();	// 객체e.의 printStackTrace메소드 실행
 			}			
 		}
 		

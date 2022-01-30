@@ -31,19 +31,6 @@ public class Dog extends Animal{	// Animal클래스를 상속받음
 	@Override	// 오버라이딩
 	public void wash() {	// wash 메소드
 		System.out.println(this.name+"님 씻는 중!");	// 씻기기 출력문
-		for (int i = 0; i < 5; i++) {	// int값 i는 0; i가 5미만동안; i++
-			System.out.print("멍~!");	// "멍~!" 출력
-			// 후에 공부할 때 자세히 설명
-			try {
-				Thread.sleep(1000);	// 1초
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
-		System.out.println();	// 줄 띄우기
-		this.hp += 20;	// this.hp = this.hp + 20
-		this.feed += 20;	// this.feed = this.feed + 20
-		show();	// show 메소드(스테이터스) 출력
+		washtime(5, "멍");	// washtime 메소드 사용
 	}
 }

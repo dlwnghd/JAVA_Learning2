@@ -1,6 +1,6 @@
 package game;
 
-import java.util.Scanner;
+import java.util.Scanner;	// Scanner import
 
 public class Main {
 	public static void main(String[] args) {
@@ -11,27 +11,34 @@ public class Main {
 		Scanner sc = new Scanner(System.in);	// 입력을 위한 Scanner 호출
 		Animal avatar = null;	// Animal타입의 avatar = null값 정의
 		
-		// 메인화면 출력문
-		System.out.println("★☆★☆모여라 동물친구들★☆★☆");
-		System.out.println("게임 캐릭터를 선택하세요!");
-		System.out.println("1. 강아지");
-		System.out.println("2. 고양이");
-		System.out.println("나머지숫자. 양");
-		System.out.println("입력 >> ");
-		int choice = Integer.parseInt(sc.nextLine());	// int값 choice는 사용자로부터 입력 받은 값을 int값으로 저장
-		
-		System.out.print("캐릭터 이름을 입력하시오 >> ");	// 사용자로부터 캐릭터 이름 입력 유도
-		String name = sc.nextLine();	// String타입 name은 사용자로부터 입력받은 값을 String값으로 저장
-		
-		if(choice == 1) {	// 1. 강아지 선택
-			avatar = new Dog(name, 20, 20);	// up캐스팅, Dog타입의 (name, 20, 20) 저장
-		}else if(choice == 2) {	// 2. 고양이 선택
-			avatar = new Cat(name, 20, 20);	// up캐스팅, Cat타입의 (name, 20, 20) 저장
-		}else {	// 나머지숫자. 양 선택
-			avatar = new Sheep(name, 20, 20);	// up캐스팅, Sheep타입의 (name, 20, 20) 저장
-		}
 		
 		while(true) {
+			// 메인화면 출력문
+			System.out.println("★☆★☆모여라 동물친구들★☆★☆");
+			System.out.println("게임 캐릭터를 선택하세요!");
+			System.out.println("1. 강아지");
+			System.out.println("2. 고양이");
+			System.out.println("3. 양");
+			System.out.println("나머지숫자. 종료");
+			System.out.println("입력 >> ");
+			int choice = Integer.parseInt(sc.nextLine());	// int값 choice는 사용자로부터 입력 받은 값을 int값으로 저장
+						
+			if(choice > 3) {
+				System.out.println("게임을 종료합니다.");
+				break;
+			}
+			
+			System.out.print("캐릭터 이름을 입력하시오 >> ");	// 사용자로부터 캐릭터 이름 입력 유도
+			String name = sc.nextLine();	// String타입 name은 사용자로부터 입력받은 값을 String값으로 저장
+			
+			if(choice == 1) {	// 1. 강아지 선택
+				avatar = new Dog(name, 20, 20);	// up캐스팅, Dog타입의 (name, 20, 20) 저장
+			}else if(choice == 2) {	// 2. 고양이 선택
+				avatar = new Cat(name, 20, 20);	// up캐스팅, Cat타입의 (name, 20, 20) 저장
+			}else if(choice == 3){	// 나머지숫자. 양 선택
+				avatar = new Sheep(name, 20, 20);	// up캐스팅, Sheep타입의 (name, 20, 20) 저장
+			}
+			
 			// 캐릭터 메뉴 출력문
 			System.out.println("1. 먹이주기");
 			System.out.println("2. 산책가기");

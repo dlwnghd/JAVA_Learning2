@@ -6,11 +6,8 @@ public class Cat extends Animal {	// Animal클래스를 상속받음
 		super(name, feed, hp);	// super로 부모클래스의 인스턴스 변수 참조(name, feed, hp)
 	}
 	
-	public void onlyCat() {	// Cat클래스에서 새롭게 정의된 메소드
-		System.out.println("야옹야옹~");	// "야옹야옹~" 출력
-	}
 	
-	// 먹이주기(부모클래스와 동일 -> 재정의X)
+	// 먹이주기(부모클래스와 동일한 동작 -> 재정의X)
 
 	// 산책가기(재정의)
 	@Override	// 오버라이딩
@@ -22,20 +19,11 @@ public class Cat extends Animal {	// Animal클래스를 상속받음
 	// 씻기기(재정의)
 	@Override	// 오버라이딩
 	public void wash() {	// wash() 메소드
-		this.hp += 20;		// hp = hp + 20
-		this.feed += 20;	// feed = feed + 20
-		System.out.println(this.name + "님 씻는 중!");	// 출력문
-		for (int i = 0; i < 7; i++) {	// int값 i=0; i가 7미만 동안; i++
-			System.out.print("야옹~!");	// "야옹~!" 출력
-			// 후에 공부할 때 자세히 설명
-			try {
-				Thread.sleep(1000);	// 1초
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
-		System.out.println();	// 줄 띄우기
-		show();	// 스테이터스 출력
+		washtime(7, "야옹");	// washtime 메소드 사용
+	}
+	
+	// 이스터에그 메소드 
+	public void onlyCat() {	// Cat클래스에서 새롭게 정의된 메소드
+		System.out.println("야옹야옹~");	// "야옹야옹~" 출력
 	}
 }

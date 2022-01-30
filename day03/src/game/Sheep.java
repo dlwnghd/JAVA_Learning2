@@ -25,19 +25,6 @@ public class Sheep extends Animal {	// Animal클래스를 상속받음
 	// 씻기기(재정의)
 	@Override	// 오버라이딩
 	public void wash() {	// wash() 메소드
-		this.hp += 20;		// hp = hp + 20
-		this.feed += 20;	// feed = feed + 20
-		System.out.println(this.name + "님 씻는 중!");		// 출력문
-		for (int i = 0; i < 10; i++) {	// int값 i는0; i가 10미만동안; i++
-			System.out.print("메에~!");	// "메에~!" 출력
-			try {
-				Thread.sleep(1000);	// 1초
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
-		System.out.println();	// 줄바꿈
-		show();		// show()메소드 출력
+		washtime(10, "메에");	// washtime 메소드 사용
 	}
 }
