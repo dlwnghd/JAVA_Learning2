@@ -1,14 +1,14 @@
 package day04;
 
-public class SoilderAdapter implements Soilder{
+public class SoilderAdapter implements Soldier{
 
 	@Override
-	public void eat() {;}
+	public void eat() {;}	// 다른 개발자와 협력을 위해 ;사용
 
 	@Override
-	public void work() {;}
+	public void work() {;}	// 다른 개발자와 협력을 위해 ;사용
 
 	@Override
-	public void sleep() {;}
+	public void sleep() {;}	// 다른 개발자와 협력을 위해 ;사용
 
 }
