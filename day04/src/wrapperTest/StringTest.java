@@ -5,7 +5,7 @@ public class StringTest {
 		String msg = "안녕 하세요 반갑 습니다";
 		// length() : 해당문자열 길이를 int값으로 return
 		System.out.println("msg.length() : " + msg.length());
-		// chatAt : 해당 인덱스의 문자를 return
+		// charAt() : 해당 인덱스의 문자를 return
 		System.out.println("msg.charAt(0) : " + msg.charAt(0));
 		// indexOf() : 특정 문자열의 인덱스를 return
 		System.out.println("msg.indexOf(\"반갑\") : " + msg.indexOf("반갑"));

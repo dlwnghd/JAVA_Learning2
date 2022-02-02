@@ -6,6 +6,7 @@ import java.util.Scanner;	// java패키지.util클래스.Scanner메소드
 public class ExceptionTest {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner (System.in);	// Scanner 선언
+		
 		// 배열 안에 있는 요소를 나눠주는 프로그램
 		int[] ar = {10, 20, 30};	// int타입배열 ar = {10, 20, 30}
 		// 사용자에게 인덱스번호와 나눌 수를 입력 받아서
@@ -18,10 +19,11 @@ public class ExceptionTest {
 			System.out.print("나눌 값 입력 >> ");	// 사용자에게 나눌 값 입력 유도
 			int num = sc.nextInt();	// 사용자 입력 값 int num에 저장
 			System.out.println("결과 : " + ar[idx] / num);	// 결과 출력
-		}catch (ArrayIndexOutOfBoundsException e) {	// e에는 발생한 예외의 객체가 담기게 된다
+		}catch (ArrayIndexOutOfBoundsException e) {	// e에는 발생한 예외의 객체가 담기게 된다, e : 어떤 예외인지 받아주는 객체
 //			e.printStackTrace();	// 예외의 종류를 출력하는 메소드
 //			System.out.println(e.getMessage());	// getMessage() // 예외의 부연설명을 알려주는 메소드
-			System.out.println("인덱스를 0부터2만 입력하시오");
+			// getMessage() // 예외의 부연설명을 알려주는 메소드
+			System.out.println("인덱스를 0부터 2만 입력하시오");
 		}catch (ArithmeticException e) {
 			System.out.println("0으로 나눌 수 없습니다");
 		}catch (InputMismatchException e) {

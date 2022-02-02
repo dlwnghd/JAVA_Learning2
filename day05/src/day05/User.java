@@ -1,12 +1,12 @@
 package day05;
 
 public class User {
-	public void wash() throws InterruptedException{
+	public void wash() throws InterruptedException{	// InterruptedException 오류 떠넘김
 		Thread.sleep(1000);
 	}
 	
 	// 닉네임을 정의해주는 메소드
-	public void setNickName(String nick) throws BadWordException{
+	public void setNickName(String nick) throws BadWordException{	// 오류 처리를 BadWorException에게 넘겨줌
 		if (nick.equals("바보")) {	// nick이 "바보"와 같다면
 			throw new BadWordException("바보라고 입력됨");
 		}else if(nick.equals("멍청이")) {	// nick이 "멍청이"와 같다면
