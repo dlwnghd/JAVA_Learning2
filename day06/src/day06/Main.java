@@ -54,6 +54,7 @@ public class Main {
 				// 비밀번호를 입력 받는다
 				System.out.print("PW : ");	// 사용자로부터 PW입력 유도
 				String pw = sc.nextLine();	// String타입의 pw는 사용자가 입력한 값
+				
 				// 2. 해당 아이디가 users에서 동일한 id가 있는지 검사합니다
 
 				// 빠른 for문
@@ -130,7 +131,7 @@ public class Main {
 				}
 				// 빠른for문 일반 for문
 			} else { // 메인메뉴에서 다른 번호 입력시
-				System.out.println("잘못 입력 했습니다!\n");
+				System.out.println("잘못 입력 했습니다!\n");	// 잘못 입력 했습니다! 출력
 			}
 		}
 	}
